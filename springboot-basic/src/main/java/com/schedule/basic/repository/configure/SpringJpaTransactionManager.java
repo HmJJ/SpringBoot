@@ -26,7 +26,7 @@ public class SpringJpaTransactionManager extends JpaTransactionManager {
 			logger.info("write, transaction;");
 			DynamicDataSourceSwitcher.setMasterDataSource();
 		} else {
-//			logger.info("read");
+			logger.info("read");
 			DynamicDataSourceSwitcher.setSlaveDataSource();
 		}
 		super.doBegin(transaction, definition);
@@ -38,7 +38,7 @@ public class SpringJpaTransactionManager extends JpaTransactionManager {
 	@Override
 	protected void doCommit(DefaultTransactionStatus status) {
 		super.doCommit(status);
-//		logger.info("transaction: commit");
+		logger.info("transaction: commit");
 	}
 
 }

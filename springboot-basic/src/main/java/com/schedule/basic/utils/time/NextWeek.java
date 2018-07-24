@@ -3,8 +3,6 @@ package com.schedule.basic.utils.time;
 import java.util.Calendar;
 import java.util.Date;
 
-import com.schedule.basic.utils.time.DateUtils;
-
 public class NextWeek {
 	public static final int ERROR = -1;
 	@SuppressWarnings("unused")

@@ -1,4 +1,3 @@
-
 package com.schedule.basic.repository.crud;
 
 import java.io.Serializable;
@@ -26,7 +25,7 @@ import lombok.Setter;
  */
 public class DefaultCrudRepository<T extends SupportModel, PK extends Serializable> extends DefaultSupportRepository<T, PK> implements CrudRepository<T, PK> {
 
-	@PersistenceContext EntityManager manager;
+	@PersistenceContext private EntityManager manager;
 	@Getter @Setter private String license;
 	static Integer day;
 	static String date;

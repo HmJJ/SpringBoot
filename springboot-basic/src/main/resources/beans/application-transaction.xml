@@ -17,7 +17,7 @@
 		<property name="entityManagerFactory" ref="entityManagerFactory"></property>
 	</bean>
 
-	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+ 	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
 
 	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
 	<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />

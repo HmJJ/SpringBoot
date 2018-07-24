@@ -8,9 +8,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.HashSet;
-import javax.xml.datatype.XMLGregorianCalendar;
 
-import com.schedule.basic.utils.time.NextWeek;
+import javax.xml.datatype.XMLGregorianCalendar;
 
 public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 	public static final String DEFAULT_PATTERN = "yyyy-MM-dd HH:mm:ss";
