@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @ImportResource(locations = {"classpath*:/beans/**/*.xml"})
-@ComponentScan(basePackages= {"com.schedule.**.controller,com.schedule.**.service,com.schedule.**.entity,com.schedule.configure"})
+@ComponentScan(basePackages= {"com.schedule"})
 @SpringBootApplication
 @EnableScheduling
 public class ApplicationBoot extends SpringBootServletInitializer {
